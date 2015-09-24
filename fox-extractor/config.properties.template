@@ -1,0 +1,27 @@
+# the parameters key|value.serializer are not used since the implementation on Spark doesn't support KafkaAvroDecoder
+kafka.consumer.bootstrap.servers=localhost:9092
+kafka.consumer.zookeeper.connect=localhost:2181
+kafka.consumer.group.id=group1
+kafka.consumer.schema.registry.url=http://localhost:8081
+# maximum number of schema objects created for a given subject
+kafka.consumer.schema.registry.identityMapCapacity=10
+
+kafka.producer.bootstrap.servers=localhost:9092
+kafka.producer.acks=all
+kafka.producer.retries=1
+kafka.producer.schema.registry.url=http://localhost:8081
+
+# We can only get schemas by Id from the Schema Registry. Is to us to find out which id  to set here
+app.kafka.consumer.topics=aTweet
+app.kafka.producer.topic=rdf-content
+app.kafka.topic.schema=ner-rdf-schema.json
+
+# FOX configuration
+app.fox.api=http://144.76.166.111:4444/api
+# supported languages separated by coma, not to process languages that the NER do not support
+app.fox.languages=en
+
+#base namespace to create instances
+app.vocabulary.namespace=http://ldiw.ontos.com/resource/
+
+

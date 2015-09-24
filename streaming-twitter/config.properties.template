@@ -1,0 +1,20 @@
+twitter4j.oauth.consumerKey=the-consumer-key
+twitter4j.oauth.consumerSecret=the-consumer-secret
+twitter4j.oauth.accessToken=the-access-token
+twitter4j.oauth.accessTokenSecret=the-access-secret
+
+kafka.producer.bootstrap.servers=localhost:9092
+kafka.producer.acks=all
+kafka.producer.retries=0 
+kafka.producer.key.serializer=io.confluent.kafka.serializers.KafkaAvroSerializer
+kafka.producer.value.serializer=io.confluent.kafka.serializers.KafkaAvroSerializer
+kafka.producer.schema.registry.url=http://localhost:8081
+
+app.kafka.topic.out=contentTweet
+app.kafka.topic.schema=/path/to/tweet-schema-with-topic.json
+
+# twitter filters separated by comma
+app.filter.track=google,alphabet
+app.filter.locations=
+
+
