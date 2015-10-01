@@ -10,4 +10,6 @@ Copy the `config.properties.template` to a file called `config.properties`, wher
 
 You need to have Spark, Kafka, Zookeper and Schema-registry running.
 
-		./bin/spark-submit --class com.ontos.spark.streaming.twitter.SparkTwitterApp --master spark://localhost:7077 target/streaming-twitter-jar-with-dependencies.jar config.properties
+		./bin/spark-submit --class com.ontos.service.ner.FoxProcessor \
+		--master spark://localhost:7077 \
+		fox-ner-processor-jar-with-dependencies.jar myAppName config.properties

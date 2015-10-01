@@ -1,0 +1,155 @@
+{
+    "namespace": "com.ontos",
+    "type": "record",
+    "name": "atweet",
+    "fields": [
+        {
+            "name": "date",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "content",
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "kafkaTopic",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "geolocation",
+            "default": null,
+            "type": [
+                "null",
+                {
+                    "name": "geolocationtype",
+                    "type": "record",
+                    "fields": [
+                        {
+                            "name": "lat",
+                            "type": "double"
+                        },
+                        {
+                            "name": "long",
+                            "type": "double"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "source",
+            "type": [
+                "null",
+                "string"
+            ],
+            "default": null
+        },
+        {
+            "name": "retweetcount",
+            "type": "int"
+        },
+        {
+            "name": "isfaved",
+            "type": "boolean"
+        },
+        {
+            "name": "urls",
+            "default": null,
+            "type": [
+                "null",
+                {
+                    "name": "urlarray",
+                    "type": "array",
+                    "items": {
+                        "name": "url",
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "hashtags",
+            "default": null,
+            "type": [
+                "null",
+                {
+                    "name": "hashtagarray",
+                    "type": "array",
+                    "items": {
+                        "name": "hashtag",
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "user",
+            "default": null,
+            "type": [
+                "null",
+                {
+                    "name": "usertype",
+                    "type": "record",
+                    "fields": [
+                        {
+                            "name": "id",
+                            "type": "long"
+                        },
+                        {
+                            "name": "name",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "screenname",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "followers",
+                            "type": "int"
+                        },
+                        {
+                            "name": "following",
+                            "type": "int"
+                        },
+                        {
+                            "name": "description",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "name": "tweetcount",
+                            "type": "int"
+                        },
+                        {
+                            "name": "lang",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "namespace": "com.ontos",
+    "type": "record",
+    "name": "rdfcontent",
+    "fields": [
+        {
+            "name": "rdf",
+            "type": "string"
+        },
+        {
+            "name": "key",
+            "type": "string"
+        },
+        {
+            "name": "kafkaTopic",
+            "type": "string"
+        }
+    ]
+}

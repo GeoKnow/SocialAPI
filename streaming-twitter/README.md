@@ -10,4 +10,6 @@ Copy the `config.properties.template` to a file called `config.properties`, wher
 
 You need to have Spark, Kafka, Zookeper and Schema-registry running.
 
-    spark-submit --class com.ontos.service.ner.FoxProcessor --master spark://localhost:7077 target/fox-ner-processor-jar-with-dependencies.jar config.properties
+    ./sbin/spark-submit --class com.ontos.service.ner.FoxProcessor \
+    --master spark://localhost:7077 \
+    fox-ner-processor-jar-with-dependencies.jar myAppName config.properties

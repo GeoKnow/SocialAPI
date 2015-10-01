@@ -1,0 +1,20 @@
+# Kafka consumer parameters
+kafka.consumer.bootstrap.servers=localhost:9092
+kafka.consumer.zookeeper.connect=localhost:2181
+kafka.consumer.group.id=group1
+kafka.consumer.schema.registry.url=http://localhost:8081
+# maximum number of schema objects created for a given subject
+kafka.consumer.schema.registry.identityMapCapacity=10
+
+# Storage configuration can be endpoint and/or hdfs, but at least one
+# topics with RDF content to consume, comma separate
+app.kafka.consumer.topics=rdfcontent,rdfcontent2
+# specify at least one SPARQL endpoints and credentials
+app.endpoint.1.url=http://localhost:9090/sparql
+app.endpoint.1.user=dba
+app.endpoint.1.pass=dba
+app.endpoint.1.graph=http://ldiw.ontos.com/resource/twitter
+# specify 0 - n files to store the data as well 
+app.file.1=hdfs://localhost:9000/mydatadir
+
+

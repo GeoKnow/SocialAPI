@@ -17,7 +17,7 @@ app.kafka.producer.topic=rdf-content
 app.kafka.topic.schema=ner-rdf-schema.json
 
 # FOX configuration
-app.fox.api=http://144.76.166.111:4444/api
+app.fox.api=http://localhost:4444/api
 # supported languages separated by coma, not to process languages that the NER do not support
 app.fox.languages=en
 

@@ -1,5 +1,5 @@
 # SocialAPI
-This project contains several application for consuming and processing Twitter streams for the Supply Chain use case in the [GeoKnow](http://geoknow.eu) project.
+This project contains several application for consuming and processing Twitter streams for the Supply Chain use case in the [GeoKnow.eu](http://geoknow.eu) project.
 
 ## Contents
 
@@ -7,7 +7,7 @@ This projects contains three Spark applications for:
 
 - streaming-twitter: Twitter streaming extrtaction
 - fox-extractor: Name Entity Recognition extraction that consumes tweets extracted in the streaming-twitter that uses [FOX](https://github.com/AKSW/FOX)
-- rdf-storage: a persistance component for saving results form the fox-extractor  
+- rdf-serializer: a persistance component for saving results form the fox-extractor  
 
 
 ## Requirements
