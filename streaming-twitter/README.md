@@ -2,6 +2,11 @@
 
 This applications consumes Twitter streams. 
 
+## Download
+
+Since Github has a file size limit it was not possible to put here the binaries. But you can download it form here:
+http://generator.geoknow.eu/social-api/streaming-twitter-jar-with-dependencies.jar
+
 ## Configure
 
 Copy the `config.properties.template` to a file called `config.properties`, where you can edit the twitter connection info, the servers used, schema information and filters. 
